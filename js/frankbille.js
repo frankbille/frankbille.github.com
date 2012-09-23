@@ -1,5 +1,10 @@
 $(function() {
 	/**
+	 * Tooltips
+	 */
+	$('[data-placement]').tooltip();
+	
+	/**
 	 * Current year
 	 */
 	$('.current-year').text(new Date().getFullYear());
@@ -26,6 +31,13 @@ $(function() {
 						
 						var repoLink = $("<a class='btn btn-mini' style='margin-bottom: 8px'>");
 						repoLink.attr("href", value.html_url);
+						if (value.description != "") {
+							repoLink.attr("title", value.name);
+							repoLink.attr("data-content", value.description);
+							repoLink.attr("data-placement", "top");
+							repoLink.attr("data-trigger", "hover");
+							repoLink.popover();
+						}
 						repoLink.append(value.name);
 						
 						container.append(repoLink);
