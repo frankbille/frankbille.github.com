@@ -2,13 +2,14 @@
 layout: default
 title: Frank Bille
 ---
+<div itemscope itemtype="http://data-vocabulary.org/Person">
 <header class="jumbotron subhead" id="overview">
 	<div class="row">
 		<div class="span2">
-			<img src="images/frankbille_140x140.jpg" width="140" height="140" class="img-polaroid">
+			<img itemprop="photo" src="images/frankbille_140x140.jpg" width="140" height="140" class="img-polaroid">
 		</div>
 		<div class="span10">
-			<h1>Frank Bille</h1>
+			<h1 itemprop="name">Frank Bille</h1>
 			<p class="lead">Open Source enthusiast - Web Application Developer</p>
 		</div>
 	</div>
@@ -27,7 +28,7 @@ title: Frank Bille
 		<address>
 			<strong>Current Employer</strong>
 			<br>
-			Avaleo
+			<span itemprop="affiliation">Avaleo</span>
 			<br>
 			Skagensgade 39, 2
 			<br>
@@ -37,14 +38,14 @@ title: Frank Bille
 			<br>
 			<a href="http://www.avaleo.net">www.avaleo.net</a>
 		</address>
-		<address>
+		<address itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
 			<strong>Physical Home Address</strong>
 			<br>
-			P. Knudsens Gade 8, st. th.
+			<span itemprop="street-address">P. Knudsens Gade 8, st. th.</span>
 			<br>
-			DK-2450 <abbr data-placement="right" title="Copenhagen">København SV</abbr>
+			<span itemprop="postal-code">DK-2450</span> <abbr data-placement="right" title="Copenhagen" itemprop="locality">København SV</abbr>
 			<br>
-			Denmark
+			<span itemprop="country-name">Denmark</span>
 		</address>
 		<address>
 			<strong>LinkedIn</strong>
@@ -77,4 +78,5 @@ title: Frank Bille
 			<a href="http://www.ohloh.net/accounts/frankbille">www.ohloh.net/accounts/frankbille</a>
 		</address>
 	</div>
+</div>
 </div>
