@@ -118,6 +118,11 @@ module.exports = function (grunt) {
             cwd: '.tmp/images',
             dest: '<%= cfg.dist %>/images',
             src: ['generated/*']
+          },
+          {
+            expand: true,
+            dest: '<%= cfg.dist %>',
+            src: ['CNAME']
           }
         ]
       },
@@ -224,6 +229,7 @@ module.exports = function (grunt) {
       },
       src: [
         'index.html',
+        'CNAME',
         'google*.html',
         'js/**',
         'images/**',
