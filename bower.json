@@ -1,0 +1,21 @@
+{
+  "name": "frankbille.dk",
+  "version": "2.0.0",
+  "homepage": "http://frankbille.dk",
+  "authors": [
+    "Frank Bille <github@frankbille.dk>"
+  ],
+  "main": "app/js/app.js",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.16",
+    "bootstrap": "3.1.1"
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="frankbilleApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frank Bille</title>
+
+    <!-- build:css css/vendor.css -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- endbuild -->
+
+    <!-- build:css css/app.css -->
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <!-- endbuild -->
+</head>
+<body>
+
+<div class="container">
+
+    <div itemscope itemtype="http://data-vocabulary.org/Person">
+        <header class="subhead" id="overview">
+            <div class="row">
+                <div class="col-lg-2">
+                    <img itemprop="photo" src="images/frankbille_140x140.jpg" width="140" height="140" class="img-thumbnail" alt="Frank Bille">
+                </div>
+                <div class="col-lg-10">
+                    <h1 itemprop="name">Frank Bille</h1>
+                    <p class="lead">Open Source enthusiast - Web Application Developer</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-lg-8" ng-controller="GitHubProjectsCtrl">
+                <h2>GitHub projects</h2>
+                <div class="list-group">
+                    <a ng-repeat="repo in repos | orderBy:'updated_at':true" class="list-group-item" ng-href="{{repo.html_url}}">
+                        <h4 class="list-group-item-heading">{{repo.name}}</h4>
+                        <p class="list-group-item-text">{{repo.description}}</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h2>Contact Info</h2>
+                <address>
+                    <strong>Current Employer</strong>
+                    <br>
+                    <span itemprop="affiliation">Avaleo</span>
+                    <br>
+                    Skagensgade 39, 2
+                    <br>
+                    DK-2630 Høje Tåstrup
+                    <br>
+                    Denmark
+                    <br>
+                    <a href="http://www.avaleo.net">www.avaleo.net</a>
+                </address>
+                <address itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+                    <strong>Physical Home Address</strong>
+                    <br>
+                    <span itemprop="street-address">Teglholmsgade 60, st. th.</span>
+                    <br>
+                    <span itemprop="postal-code">DK-2450</span> <abbr data-placement="right" title="Copenhagen" itemprop="locality">København SV</abbr>
+                    <br>
+                    <span itemprop="country-name">Denmark</span>
+                </address>
+                <address>
+                    <strong>LinkedIn</strong>
+                    <br>
+                    <a href="http://dk.linkedin.com/in/frankbille">dk.linkedin.com/in/frankbille</a>
+                </address>
+                <address>
+                    <strong>GitHub</strong>
+                    <br>
+                    <a href="https://github.com/frankbille">github.com/frankbille</a>
+                </address>
+                <address>
+                    <strong>Facebook</strong>
+                    <br>
+                    <a href="http://www.facebook.com/frankbille">www.facebook.com/frankbille</a>
+                </address>
+                <address>
+                    <strong>Twitter</strong>
+                    <br>
+                    <a href="http://twitter.com/frankbille">twitter.com/frankbille</a>
+                </address>
+                <address>
+                    <strong>Google Plus</strong>
+                    <br>
+                    <a href="http://google.com/+FrankBille?rel=author">google.com/+FrankBille</a>
+                </address>
+                <address>
+                    <strong>Masterbranch</strong>
+                    <br>
+                    <a href="http://masterbranch.com/frankbille">masterbranch.com/frankbille</a>
+                </address>
+                <address>
+                    <strong>Ohloh</strong>
+                    <br>
+                    <a href="http://www.ohloh.net/accounts/frankbille">www.ohloh.net/accounts/frankbille</a>
+                </address>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer ng-controller="FooterCtrl">
+        <p>
+            &copy; 2000-{{currentYear}} Frank Bille
+        </p>
+    </footer>
+</div>
+
+
+<!-- build:js js/vendor.js -->
+<script src="bower_components/angular/angular.js"></script>
+<!-- endbuild -->
+<!-- build:js({.tmp,app}) js/app.js -->
+<script src="js/app.js"></script>
+<script src="js/controllers/footer.ctrl.js"></script>
+<script src="js/controllers/githubprojects.ctrl.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

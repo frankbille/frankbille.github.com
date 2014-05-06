@@ -1,0 +1,7 @@
+.tmp
+dist
+.idea
+.grunt
+atlassian-ide-plugin.xml
+node_modules
+app/bower_components
