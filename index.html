@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/71c590b0.vendor.css"/>
 
-    <link rel="stylesheet" href="css/144d36be.app.css"/>
+    <link rel="stylesheet" href="css/7bf65763.app.css"/>
 </head>
 <body>
 
@@ -17,10 +17,10 @@
     <div itemscope itemtype="http://data-vocabulary.org/Person">
         <header class="subhead" id="overview">
             <div class="row">
-                <div class="col-lg-2">
+                <div class="col-md-2 col-sm-3 col-xs-12">
                     <img itemprop="photo" src="images/52061209.frankbille_140x140.jpg" width="140" height="140" class="img-thumbnail" alt="Frank Bille">
                 </div>
-                <div class="col-lg-10">
+                <div class="col-md-10 col-sm-9 col-xs-12">
                     <h1 itemprop="name">Frank Bille</h1>
                     <p class="lead">Open Source enthusiast - Web Application Developer</p>
                 </div>
@@ -28,16 +28,7 @@
         </header>
 
         <div class="row">
-            <div class="col-lg-8" ng-controller="GitHubProjectsCtrl">
-                <h2>GitHub projects</h2>
-                <div class="list-group">
-                    <a ng-repeat="repo in repos | orderBy:'updated_at':true" class="list-group-item" ng-href="{{repo.html_url}}">
-                        <h4 class="list-group-item-heading">{{repo.name}}</h4>
-                        <p class="list-group-item-text">{{repo.description}}</p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4">
+            <div class="col-md-4 col-sm-12 col-md-push-8">
                 <h2>Contact Info</h2>
                 <address>
                     <strong>Current Employer</strong>
@@ -96,6 +87,15 @@
                     <br>
                     <a href="http://www.ohloh.net/accounts/frankbille">www.ohloh.net/accounts/frankbille</a>
                 </address>
+            </div>
+            <div class="col-md-8 col-sm-12 col-md-pull-4" ng-controller="GitHubProjectsCtrl">
+                <h2>GitHub projects</h2>
+                <div class="list-group ng-hide" ng-show="repos">
+                    <a ng-repeat="repo in repos | orderBy:'updated_at':true" class="list-group-item" ng-href="{{repo.html_url}}">
+                        <h4 class="list-group-item-heading">{{repo.name}}</h4>
+                        <p class="list-group-item-text">{{repo.description}}</p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
