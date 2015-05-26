@@ -1,0 +1,83 @@
+==================================================================
+https://keybase.io/frankbille
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.frankbille.dk
+  * I am frankbille (https://keybase.io/frankbille) on keybase.
+  * I have a public key with fingerprint 0BEA 2EC7 C812 83FD 1524  B87E 2F57 2C1F 618D DDC0
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.8"
+        },
+        "key": {
+            "fingerprint": "0bea2ec7c81283fd1524b87e2f572c1f618dddc0",
+            "host": "keybase.io",
+            "key_id": "2F572C1F618DDDC0",
+            "uid": "34ac525bf9e2c9fa3e69ee5f735d0019",
+            "username": "frankbille"
+        },
+        "merkle_root": {
+            "ctime": 1432654205,
+            "hash": "41bd8bcc31a5259cb97600e9fc4ccd042f5a0c07205bdc103174aa517f0dafde02bc689805d93dfbe6ce7f23350502d8280ac8ad530ae44c7cbfac8f4cee64cb",
+            "seqno": 226462
+        },
+        "service": {
+            "hostname": "www.frankbille.dk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1432654253,
+    "expire_in": 157680000,
+    "prev": "6a20d7125e5e7090be8834774c48425546b9afd253c6df00da42e81c0ed811c6",
+    "seqno": 5,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2
+Comment: GPGTools - http://gpgtools.org
+
+owFdUntQVFUcBlYIBEQbhfGZLQ3SAOu573u3MBthg2maYAk0FeHec86FC+ze7e7C
+QrS+wgofA+qUUUMaoQjq0FS26mS2MmQBPnrCTOMrH5PONGAShdrYuQyN1f3r3HO+
+7/v9vu/3a463hEWH/yVdahppiaoN77+hhBWi7YfqrYqO6qz2eius0rDbZ57csgtb
+7dZKXKfIXmzT9IVuHWFbhXfhJCbdWoMNr6a7CQrYBJtoDaSbcJOsau4ybHgMzdSy
+AgXLNIYCFClaZFREcTSriAKmVU6gIaXylIgQgoBIlute33+qWic0SzREbmkHwS+j
+HASflZW1zMRXTzwwrAw5mlNUCdNQUmUG8xLGnCowHAKAkkygFxuTllRDdlcqWlUV
+Njt2YaOyCpcYuj5hG/o0E0SxDM1zLA040pPsLSc0llKQqEDIUDKpJUFFEngAsKRC
+FkIEWOJGBhAIhKMgSAGGElhZ5ihBBUhWEQa0AnlREgGHJAapCuYhFlSaYTjAARqJ
+tAhkKMqIY4CMWZbEpajkQmUhxjwLFWLCi19y61Y7TfMsTwfMf6NGg9js2wxu0p/f
+77c98GhDlYTpMXSfDvUq8lzu83nspnNfnQd/YuKxUjKpVKJobkRm9+/hUgT6v1Q4
+Jt2Kaz2agUs0E8EJvAjIZ9bBNUSSl2mABIrmMIcFIJEFEEWGFQQWsiKhcyyvSCQT
+IgR5pAISEEtjkYIAI5GiIP/AK8nfJ5cRSa9W5pZ91QYZWmPEvClh4dFhUZER5vaG
+TY2Z/s9KX2tIuF+U3nQo7vG08B82xIx/nCkOFl0Ynr+ra3WgYvTpLjb/J4trdW5T
+++9/lPOlc/zliaWRNxJzLWPDJ/uC7+xs3X/Zs3zkhYaM4rqRnuAqZnlcqNNRqRb3
+rg1tbo6IG3w5KrbtSc+RBDbng0D/gqMftktdF1zxgZilQ7c6Kn9pfCiQnUE51nWO
+Zd++M/eK58ys7siROxvzFp8Dpa5RN549+rW/OiWivvT8mj/PXtj5mtNpF5dMOfVI
+8exn5x1bBs+ljCX0hAnfDeinGvzVW9Z8WnhzbYRYL7YPN0N62veO3CVXKzbcXNpR
+9lmGJyUxef2h1MJHO+Qn3g5Zjuxt3bvy4GBoZtoJ/7R9scGo0lLPqnspVzdFV6QN
+hDuStEWOwS3Br1zXOjO61uSffL0GWZ5bvHWlcPTwFfqWfXtPfJ+evMjYNLCt4Juh
+om7vz8Fj8tb8sqrUPZ2JltbrK+5KpzNv5Pl7u0db2t5Mi+spuZs0UHQ5qSXnvUvn
+d61zLshsOzxkj/Lt27T5CyZl/+7k4WJba1vqi8GCc31T0R7Dtn799dof+zYeeObb
+Lb0Pbx0L9eXP+FV5FV0Ub58Znekcu52T4MzeMQ7Z4yv4dy25tccPgORZWZFz5y9h
+TlTvpgpmcNtOX/7y/vR72vsR+sHY589mBhfsCH6kNTQ/9cbnhvOx314Zf8tFz4kM
+LT7YeDGvtf9v
+=T/bc
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/frankbille
+
+==================================================================
