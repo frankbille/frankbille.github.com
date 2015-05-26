@@ -230,6 +230,7 @@ module.exports = function (grunt) {
       },
       src: [
         'index.html',
+        '*.txt',
         'CNAME',
         'google*.html',
         'js/**',
